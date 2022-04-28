@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my212">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.My212">
+        <activity android:name=".Activities.ui.SoldProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme."
+            />
+        <activity
+            android:name=".Activities.ui.MyOrderDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme."
+             />
+        <activity
+            android:name=".Activities.ui.CheckoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme."
+             />
+        <activity
+            android:name=".Activities.ui.AddEditAddressActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme."
+            />
+        <activity
+            android:name=".Activities.ui.AddressListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme."
+             />
+        <activity
+            android:name=".Activities.ui.CartListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme."
+            />
+        <activity
+            android:name=".Activities.ui.ProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme."
+             />
+        <activity
+            android:name=".Activities.ui.AddProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme."
+            />
+        <activity
+            android:name=".Activities.uia.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme."/>
+        <activity
+            android:name=".Activities.ui.DashboardActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.uia.UserProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme." />
+        <activity
+            android:name=".Activities.uia.ForgotPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme." />
+        <activity
+            android:name=".Activities.uia.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.uia.RegisterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme." />
+        <activity
+            android:name=".Activities.uia.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme."
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activities.uia.Splash"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.uia.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
